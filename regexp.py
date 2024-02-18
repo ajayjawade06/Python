@@ -62,3 +62,4 @@ e9 =re.sub(r'teacher','student',str5)
 print(e9)
 
 
+
