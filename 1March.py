@@ -48,9 +48,9 @@ def listA(*args):
     for x in args:
         print("Welcome "+ x)
 
-q4 = listA("Nagpur","Pune","Chandrapur","Wardha") # Returning None
+listA("Nagpur","Pune","Chandrapur","Wardha") # Returning None
 
-print(q4)
+
 
 
 def listB(*args):
