@@ -38,9 +38,9 @@ print(q3)
 
 from functools import reduce
 def addAlll(*args):
-    a = reduce(lambda acc,el:acc+el,args)      #Using REDUCE #Value of ACC not working
+    a = reduce(lambda acc,el:acc+el,args,6)      #Using REDUCE #Value of ACC not working
     return a
-q3 = addAll(1,2,45,6,67,7,44,66)
+q3 = addAlll(1,2,45,6,67,7,44,66)
 
 print(q3)
  
