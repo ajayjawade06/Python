@@ -54,6 +54,9 @@ class BookX:
     def __add__(self,obj):
         return self.pages +  obj.pages  
     
+    def __gt__(self,other):
+        return self.pages > other.pages
+    
     
 class BookY:
     def __init__(self,pages ):
@@ -61,6 +64,9 @@ class BookY:
         
     def __add__(self,obj):
         return self.pages + obj.pages
+    
+    def __gt__(self,other):
+        return self.pages > other.pages 
         
 ramayan = BookX(100)
 mahabharat = BookY(200)
@@ -69,6 +75,10 @@ print(ramayan.pages + mahabharat.pages)
 
 print(ramayan + mahabharat)
 print(mahabharat + ramayan)
+
+print(ramayan > mahabharat)
+print(mahabharat > ramayan)
+
 
 
 
