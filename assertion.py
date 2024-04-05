@@ -22,20 +22,20 @@ except IndexError :
     
 # Program 2
 
-print("Ajay")
+# print("Ajay")
 
-try: 
-    print(34/0)
+# try: 
+#     print(34/0)
     
-finally:
-    print("I will always execute")
+# finally:
+#     print("I will always execute")
     
-print("Bye")
+# print("Bye")
 
 # Program 3
 
 def calAvg(list):
-    [11,22,33][4]
+    # [11,22,33][4]
     total = 0 
     for item in list:
         total = total + item
@@ -63,12 +63,12 @@ class lowBalance(Exception):
         self.msg = msg
         
 def check(dict):
-    for k,v in dict.items():
-        if(v<20000):
-            raise lowBalance("Balance is Low")
+        for k,v in dict.items():
+            if(v<20000):
+                raise lowBalance("Balance is Low")
 
 try:
-    names = {"Snehal" : 100000,"Ajay" : 400000,"Chinmay" : 500000,"Tony" :4000000}
+    names = {"Snehal" : 100000,"Ajay" : 4000,"Chinmay" : 500000,"Tony" :4000000}
     check(names)
     print(names)
 
