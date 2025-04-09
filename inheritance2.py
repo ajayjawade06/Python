@@ -110,13 +110,13 @@ class Mom:
     def displayMomName(self):
         print(self.firstName + " " + self.lastName)
     
-class Potta(Papa,Mom):
-    def __init__(self, fn, ln,potta):
+class Son(Papa,Mom):
+    def __init__(self, fn, ln,son):
         super().__init__(fn, ln)
-        self.pottaName = potta
+        self.sonName = son
         
     def displayPottaName(self):
-        print(self.pottaName + " " + self.lastName)
+        print(self.sonName + " " + self.lastName)
         
 aju = Potta("Latari","Jawade","Aju")
 
