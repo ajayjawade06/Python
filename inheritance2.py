@@ -115,12 +115,12 @@ class Son(Papa,Mom):
         super().__init__(fn, ln)
         self.sonName = son
         
-    def displayPottaName(self):
+    def displaySonName(self):
         print(self.sonName + " " + self.lastName)
         
-aju = Potta("Latari","Jawade","Aju")
+aju = Son("Latari","Jawade","Aju")
 
 
 aju.diplayPapaName()
 aju.displayMomName()
-aju.displayPottaName()    
+aju.displaySonName()    
